@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/Style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Hangman Game</title>
+</head>
+<body>
+  
+    <!-- staet the container -->
+    <div class="container">
+<div class="game-info">
+    <div class="game-name">Hangman Game</div>
+    <!-- this will tell user what the category of word -->
+    <div class="category">
+    Word From: <span></span>
+    </div>
+</div>
+<hr>
+<div class="row">
+    <div class="hangman-draw">
+        <!-- draw the game -->
+        <div class="draw">
+            <div class="stand"></div>
+            <div class="hang"></div>
+            <div class="rope"></div>
+        <!-- draw the man   -->
+            <div class="the-man">
+                <div class="head"></div>
+                <div class="body"></div>
+                <div class="hands"></div>
+                <div class="legs"></div>
+            </div>
+
+        </div>
+    </div>
+    <!-- all letters of English.. container of letters -->
+    <div class="letters"></div>
+</div>
+<hr>
+<div class="letter-guess">
+
+</div>
+    </div>
+
+    <div class="layout">
+
+
+        <div class="popup">
+          
+        </div>
+        <div class="success-popup">
+            <h2>Great Job</h2>
+            <button>Again</button>
+        </div>
+    </div>
+
+    <audio src="audio/175954998.mp3" id="fail"  preload="auto"></audio>
+    <audio src="audio/mixkit-correct-answer-tone-2870.wav" id="success" preload="auto"></audio>
+    <!-- javascript files -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

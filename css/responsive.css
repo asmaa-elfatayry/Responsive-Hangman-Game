@@ -1,0 +1,160 @@
+@media (min-width:946px){
+    .success-popup{
+        width: 20%;
+    }
+}
+@media (max-width:945px) and (min-width:680px){
+    .letters .letter-box-style {
+        width: 44px ;
+        height: 46px;
+        color: #fff;
+        font-size: 24px;
+        line-height: 46px;
+
+}
+.success-popup{
+    width: 25%;
+}
+}
+
+@media (max-width:681px) and (min-width:440px){
+    .letters .letter-box-style {
+        display: inline-block;
+        width: 32px;
+        height: 38px;
+        background-color: #4297A0;
+        color: #fff;
+        font-size: 22px;
+        margin: 0px 7px 7px 0px;
+        line-height: 38px;
+    }
+    .letter-guess span {
+        font-size: 19px;
+    }
+    .success-popup{
+        width: 25%;
+    }
+}
+@media (max-width:439px) and (min-width:155px){
+    :root{
+        --px:2px;
+    }
+    .game-info .category {
+        display: block;
+        text-align: left;
+        margin-top: 4px;
+    }
+    .container {
+        width: 96%;
+    }
+    .letters {
+    padding: 7px;
+    }
+    .hangman-draw {
+        padding: 7px;
+        height: 180px;
+    }
+
+    .hangman-draw .draw {
+        height: 160px;
+        width: 35px;
+        left: -20px;
+    }
+
+    .hangman-draw .hang:before {
+        width: 35px;
+            left:17px;
+            top: 10px;
+    }
+    .hangman-draw .hang:after {
+        height: 15px;
+        left: 51px;
+        top: 11px;
+    }
+    .hangman-draw .rope {
+        width: 42px ;
+        height: 42px;
+        left: 30px;
+            top:27px;
+    }
+
+    .hangman-draw .the-man .head {
+        width: 31px;
+        height: 31px;
+        left: 36px;
+        top: 32px;
+    }
+    .hangman-draw .the-man .body {
+        height: 75px;
+        top: 62px;
+        left: 51px;
+    }
+
+    .hangman-draw .the-man .hands:before,
+     .hangman-draw .the-man .hands:after {
+        width: 26px;
+        top: 84px;
+     }
+     
+     .hangman-draw .the-man .hands:before {
+        left: 27px;
+     }
+     .hangman-draw .the-man .hands:after {
+        left: 51px;
+     }
+
+     .hangman-draw .the-man .legs:before,
+      .hangman-draw .the-man .legs:after {
+        width: 26px;
+        top: 142px;
+     }
+     .hangman-draw .the-man .legs:after {
+        left: 50px;
+     }
+     .hangman-draw .the-man .legs:before {
+        left: 27px;
+     }
+     .letters .letter-box-style {
+
+        width: 16px;
+        height: 20px;
+        font-size: 11px;
+        margin: 0px 1px 2px 0px;
+        line-height: 20px;
+
+    }
+    .game-info {
+        font-size: 10px;
+        display: block;
+      
+    }
+
+    .letter-guess {
+        margin: 5px auto;
+        padding: 10px;
+        min-height: 50px;
+    }
+    .letter-guess span {
+        width: 20px;
+        height: 26px;
+        line-height: 26px;
+        font-size: 10px;
+        margin-right: 3px;
+        border-bottom: 2px #333 solid;
+}
+.letter-guess .space:before {
+    width: 5px;
+}
+.success-popup{
+    width: 50%;
+font-weight: bold;
+    padding: 10px 15px 20px 15px;
+}
+
+.popup {
+width: 50%;
+}
+.bt_st {
+    top:70%
+}
+}
