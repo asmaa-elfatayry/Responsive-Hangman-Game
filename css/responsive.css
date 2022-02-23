@@ -1,6 +1,6 @@
 @media (min-width:946px){
     .success-popup{
-        width: 20%;
+        width: 200px;
     }
 }
 @media (max-width:945px) and (min-width:680px){
@@ -13,7 +13,7 @@
 
 }
 .success-popup{
-    width: 25%;
+    width: 30%;
 }
 }
 
@@ -32,7 +32,7 @@
         font-size: 19px;
     }
     .success-popup{
-        width: 25%;
+        width: 35%;
     }
 }
 @media (max-width:439px) and (min-width:155px){
@@ -146,13 +146,15 @@
     width: 5px;
 }
 .success-popup{
-    width: 50%;
-font-weight: bold;
+    width: 60%;
+font-weight: normal;
     padding: 10px 15px 20px 15px;
 }
 
 .popup {
-width: 50%;
+    width: 65%;
+    font-size: 17px;
+
 }
 .bt_st {
     top:70%
