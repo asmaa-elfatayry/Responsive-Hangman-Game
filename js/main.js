@@ -41,8 +41,11 @@ let randomPropVal=words[randomPropName];
 let randomValNum=Math.floor(Math.random() * randomPropVal.length );//ex number of language 0<=num<7
 // get the word from prop value //chossen word
 let randomValue=randomPropVal[randomValNum];
-// console.log(randomValue.length);
-// console.log(randomValue);
+// get all letter
+let onlyLetter=randomValue.replace(" ",'');
+let onlyLetterArray=onlyLetter.split("");
+//console.log(onlyLetterArray)
+console.log(randomValue)
 
 // category info we will show the name of category beside Word Form:
 document.querySelector('.game-info span').innerHTML=randomPropName;
@@ -70,7 +73,7 @@ letterAndSpaces.forEach(letter=>{
 
 // select all guess span
 let guessSpans=document.querySelectorAll('.letter-guess span');
-
+console.log(guessSpans)
 // wrong answer
 let wrongAnswer=0;
 
@@ -94,33 +97,46 @@ let theStates=false;
         
         // chosen word
         let theChoosenWord=Array.from(randomValue.toLowerCase());
-        // get word=>letter and space
-        // loop in word choosen and compare with the letter user choose
+
+
+        console.log(theChoosenWord)
+    
+    // let all;
+    //     for(let i=0;i<theChoosenWord.length;i++){
+    //         if(theChoosenWord[i]===theClick){
+    //             let countTrueAns=0;
+    //             console.log("yes");
+    //             countTrueAns++;
+    //             all+=countTrueAns;
+    //             console.log(countTrueAns)
+    //         }
+          
+    //      }
         theChoosenWord.forEach((wordLetter,wordIndex)=>{
             // if the clicked letter = letter in choosen word
+            
+     
+
             if(theClick==wordLetter){
                 
                 // answer correct
                 theStates=true;
-                
-                // console.log(wordIndex)
+           
+
                 // loop on all guess letters 
                 guessSpans.forEach((span,spanIndx)=>{
+                   
             if (wordIndex===spanIndx){
                 span.innerHTML=wordLetter;
                 correct++;
-               
-
+                document.getElementById('success').play();
             }
                 });
                 
             }
 
         });
-        // console.log(theChoosenWord);
-        
-        // console.log(theClick);
-
+     
         // if letter wrong
         if(theStates!=true){
             wrongAnswer++;
@@ -134,10 +150,12 @@ let theStates=false;
             }
 
         }else{
+            console.log(randomValue)
+            console.log("corect",correct)
              // play correct answer sound
-             document.getElementById('success').play();
+            // document.getElementById('success').play();
              if(wrongAnswer!==8){
-                 if(cli===randomValue.length  ){
+                 if(correct===onlyLetterArray.length  ){
               GameSucc();
                 } else {
                     
