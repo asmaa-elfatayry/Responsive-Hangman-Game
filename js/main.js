@@ -45,7 +45,7 @@ let randomValue=randomPropVal[randomValNum];
 let onlyLetter=randomValue.replace(" ",'');
 let onlyLetterArray=onlyLetter.split("");
 //console.log(onlyLetterArray)
-console.log(randomValue)
+//console.log(randomValue)
 
 // category info we will show the name of category beside Word Form:
 document.querySelector('.game-info span').innerHTML=randomPropName;
@@ -99,7 +99,7 @@ let theStates=false;
         let theChoosenWord=Array.from(randomValue.toLowerCase());
 
 
-        console.log(theChoosenWord)
+      //  console.log(theChoosenWord)
     
     // let all;
     //     for(let i=0;i<theChoosenWord.length;i++){
